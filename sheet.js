@@ -18,7 +18,7 @@ module.exports = React.createClass({
     },
     componentWillReceiveProps: function(newProps) {
         return Animated.timing(this.state.bottom, {
-            toValue: newProps.visible ? 0 : DEFAULT_BOTTOM,
+            toValue: newProps.visible ? this.props.baseline : DEFAULT_BOTTOM,
             duration: DEFAULT_ANIMATE_TIME
         }).start();
     },

@@ -31,7 +31,7 @@ module.exports =  React.createClass({
                         style={{flex:1}}
                         onPress={this.props.onCancel}>
                     </TouchableOpacity>
-                    <Sheet visible={this.props.visible}>
+                    <Sheet visible={this.props.visible} baseline={this.props.baseline}>
                         <View style={styles.buttonContainer}>
                             {this.props.children}
                         </View>

@@ -43,10 +43,11 @@ var styles = StyleSheet.create({
         left: 0,
         right: 0,
         backgroundColor: 'transparent',
-        position: 'absolute'
+        position: 'absolute',
     },
     emptyOverlay: {
         backgroundColor: 'transparent',
-        position: 'absolute'
+        position: 'absolute',
+        top: 5000,        
     }
 });
